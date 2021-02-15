@@ -130,7 +130,6 @@ function managerPrompt(data) {
       const { officeNumber } = answer;
       const manager = new Manager(name, id, email, role, officeNumber);
       employeeArr.push(manager);
-      console.log(employeeArr)
     })
     .then( () => {
       launchApp();
@@ -196,7 +195,6 @@ function internPrompt(data) {
 };
 
 function writeHTML() {
-  console.log(`writeHTML: ${employeeArr[0]}`)
   const pageHTML = generateHTML(employeeArr);
 
   fs.writeFile('./dist/index.html', pageHTML, err => {
