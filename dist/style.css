@@ -1,0 +1,18 @@
+:root {
+  --primary: #daeaef;
+  --dark: #272f32;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1.5;
+}
