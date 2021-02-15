@@ -16,17 +16,11 @@ const generateRoleIcon = role => {
 // identifies unique data and adds to generateCard data
 const uniqueInfo = employee => {
   if (employee.getRole() === 'Manager') {
-    return `
-    Office Number: ${employee.officeNumber}
-    `
+    return `Office Number: ${employee.officeNumber}`
   } else if (employee.getRole() === 'Engineer') {
-    return `
-    GitHub: <a href="https://github.com/${employee.getGithub()}" target="_blank">${employee.getGithub()}</a>
-    `
+    return `GitHub: <a href="https://github.com/${employee.getGithub()}" target="_blank">${employee.getGithub()}</a>`
   } else {
-    return `
-    School: ${employee.getSchool()}
-    `
+    return `School: ${employee.getSchool()}`
   }
 };
 
